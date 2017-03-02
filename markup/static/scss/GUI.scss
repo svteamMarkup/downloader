@@ -41,12 +41,20 @@ a {
 	}
 	&._small {
 		padding: 7px;
+		@media screen and(max-width: 480px) {
+			padding: 12px;
+		}		
 	}
 }
 .main {
 	width: 100%;
 	max-width: 1220px;
 	margin: auto;
+	@media screen and(max-width: 960px) {
+		padding-left: 10px;
+		padding-right: 10px;
+		width: auto;
+	}		
 }
 
 .main-title {
@@ -65,4 +73,5 @@ a {
 .line {
 	height: 1px;
 	background-color: #ccc;
+	margin-bottom: 20px;
 }
