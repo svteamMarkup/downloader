@@ -1,0 +1,30 @@
+.progress {
+	width: 155px;
+	height: 18px;
+	background-color: #f5f5f5;
+	position: relative;
+	&__status {
+		height: 100%;
+		width: 15%;
+		background-color: #4b81bd;
+		position: absolute;
+		top: 0;
+		left: 0;
+		&._some {
+			width: 75%;
+		}		
+		&._full {
+			width: 100%;
+		}
+
+	}
+	&__text {
+		font-size: 12px;
+		text-align: center;
+		color: #4b81bd;
+		@include absolute-center;
+		&._full, &._some {
+			color: #fff;
+		}
+	}
+}

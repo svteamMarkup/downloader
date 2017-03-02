@@ -1,12 +1,23 @@
 doctype html
 html(class="no-js", lang="ru")
 
-    include ../components/head/head
-    include ../components/footer/footer
+	include ../components/head/head
+	include ../components/song-block/song-block
+	include ../components/playlist/playlist
+	include ../components/downloads-list/downloads-list
+	include ../components/progress/progress
+	include ../components/pagination/pagination
+	include ../components/footer/footer
 
-    head
-        +head()
-    body
-
-        //- Main scripts. You can replace it, but I recommend you to leave it here
-        script(src='%=static=%js/main%=hash=%%=min=%.js')
+	head
+		+head(head.defaults)
+	body
+		main.main
+			+song-block
+			+playlist(true)
+			+downloads-list(false,false,true)
+			+downloads-list(true,true,false)._completed._last
+			+playlist(false)._margin
+			+pagination
+		//- Main scripts. You can replace it, but I recommend you to leave it here
+		script(src='%=static=%js/main%=hash=%%=min=%.js')

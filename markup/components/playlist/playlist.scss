@@ -1,0 +1,36 @@
+.playlist {
+	background-color: #f5f5f5;
+	padding: 10px 0 20px 23px;
+	margin-bottom: 15px;
+	&._margin {
+		margin-left: 20px;
+	}
+	&__item {
+		display: block;
+		font-size: 13px;
+		margin-bottom: 5px;
+		position: relative;
+		padding-left: 23px;
+		&:before {
+			position: absolute;
+			content: '';
+			top: 6px;
+			left: 0;
+			width: 15px;
+			height: 1px;
+			background-color: #b0b0b0;
+		}
+		span {
+			padding-left: 5px;
+		}
+		.fa {
+			color: #b1b1b1;
+			font-size: 13px;
+		}
+	}
+}
+.playlist-list {
+	border-left: 1px solid #b0b0b0;
+	width: 440px;
+	padding-top: 15px;
+}

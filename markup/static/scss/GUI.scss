@@ -1,2 +1,68 @@
 // GUI stylies of the project
 // For example, styles of the links, buttons and so on.
+::-webkit-input-placeholder {
+  color: #807b7b;
+}
+::-moz-placeholder {
+  color: #807b7b;
+}
+:-moz-placeholder {
+  color: #807b7b;
+}
+:-ms-input-placeholder {
+  color: #807b7b;
+}
+a {
+	color: #104e88;
+	@include transition;
+	&:hover {
+		text-decoration: none;
+	}
+}
+.button {
+	display: inline-block;
+	cursor: pointer;
+	text-decoration: none;
+	@include transition;
+	&._green {
+		background-color: #18973c;
+		color: #fff;
+		&:hover {
+			background-color: lighten(#18973c, 5%);
+		}
+	}
+	&._silver {
+		background-color: #f2f2f2;
+		color: #807b7b;
+		border: 1px solid #dedede;
+		&:hover {
+			background-color: darken(#f2f2f2, 5%);
+		}		
+	}
+	&._small {
+		padding: 7px;
+	}
+}
+.main {
+	width: 100%;
+	max-width: 1220px;
+	margin: auto;
+}
+
+.main-title {
+	font-size: 22px;
+	font-weight: normal;
+}
+
+.input-form {
+  border: 1px solid #dedede;
+}
+.double-line {
+	height: 5px;
+	background: url(%=static=%general/double-line.png) repeat-x;
+	margin-bottom: 40px;
+}
+.line {
+	height: 1px;
+	background-color: #ccc;
+}

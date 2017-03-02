@@ -30,3 +30,14 @@
 }
 
 // You can add your own mixins here:
+
+@mixin transition {
+    transition: all .22s ease-in-out;
+}
+
+@mixin absolute-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}

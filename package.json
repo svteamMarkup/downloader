@@ -4,7 +4,10 @@
   "description": "Your awesome project description",
   "main": "gulpfile.js",
   "directories": {},
-  "dependencies": {},
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "fontawesome": "^4.7.2"
+  },
   "devDependencies": {
     "gulp": "^3.9.1"
   },
