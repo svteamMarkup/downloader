@@ -11,8 +11,8 @@
 
 .song-block-left {
 	width: 42%;
-	@media screen and(max-width: 760px) {
-		width: auto;
+	@media screen and(max-width: 1050px) {
+		width: 50%;
 	}		
 	@media screen and(max-width: 480px) {
 		width: 100%;
@@ -50,7 +50,7 @@
 .song-block-right {
 	width: 12%;
 	margin-right: 80px;
-	@media screen and(max-width: 960px) {
+	@media screen and(max-width: 1050px) {
 		width: auto;
 		margin-right: 0;
 	}	

@@ -8,7 +8,7 @@
 	&._margin {
 		margin-left: 20px;
 		margin-right: 20px;
-		@media screen and(max-width: 760px) {
+		@media screen and(max-width: 1050px) {
 			margin-left: 0;
 			margin-right: 0;
 		}			
@@ -19,7 +19,7 @@
 		margin-bottom: 5px;
 		position: relative;
 		padding-left: 23px;
-		@media screen and(max-width: 960px) {
+		@media screen and(max-width: 1050px) {
 			font-size: 16px;
 		}	
 		@media screen and(max-width: 480px) {
