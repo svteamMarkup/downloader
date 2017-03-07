@@ -13,70 +13,75 @@
   color: #807b7b;
 }
 a {
-	color: #104e88;
-	@include transition;
-	&:hover {
-		text-decoration: none;
-	}
+  color: #104e88;
+
+  @include transition;
+  &:hover {
+    text-decoration: none;
+  }
 }
 .button {
-	display: inline-block;
-	cursor: pointer;
-	text-decoration: none;
-	@include transition;
-	&._green {
-		background-color: #18973c;
-		color: #fff;
-		&:hover {
-			background-color: lighten(#18973c, 5%);
-		}
-	}
-	&._silver {
-		background-color: #f2f2f2;
-		color: #807b7b;
-		border: 1px solid #dedede;
-		&:hover {
-			background-color: darken(#f2f2f2, 5%);
-		}		
-	}
-	&._small {
-		padding: 7px;
-		@media screen and(max-width: 480px) {
-			padding: 12px;
-		}		
-	}
+  display: inline-block;
+
+  cursor: pointer;
+  text-decoration: none;
+
+  @include transition;
+  &._green {
+    color: #fff;
+    background-color: #18973c;
+    &:hover {
+      background-color: lighten(#18973c, 5%);
+    }
+  }
+  &._silver {
+    color: #807b7b;
+    border: 1px solid #dedede;
+    background-color: #f2f2f2;
+    &:hover {
+      background-color: darken(#f2f2f2, 5%);
+    }
+  }
+  &._small {
+    padding: 7px;
+    @media screen and(max-width: 480px) {
+      padding: 12px;
+    }
+  }
 }
-.main {
-	width: 100%;
-	max-width: 1220px;
-	margin: auto;
-	@media screen and(max-width: 1050px) {
-		padding-left: 10px;
-		padding-right: 10px;
-		width: auto;
-	}		
+.page-download {
+  width: 100%;
+  max-width: 1220px;
+  margin: auto;
+  @media screen and(max-width: 1050px) {
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
 }
 
 .main-title {
-	font-size: 22px;
-	font-weight: normal;
+  font-size: 22px;
+  font-weight: normal;
 }
 
 .input-form {
   border: 1px solid #dedede;
 }
 .double-line {
-	height: 5px;
-	background: url(%=static=%general/double-line.png) repeat-x;
-	margin-bottom: 40px;
+  height: 5px;
+  margin-bottom: 40px;
+
+  background: url(%=static=%general/double-line.png) repeat-x;
 }
 .line {
-	height: 1px;
-	background-color: #ccc;
-	margin-bottom: 20px;
+  height: 1px;
+  margin-bottom: 20px;
+
+  background-color: #ccc;
 }
 .xsmall-hide {
-	@media screen and(max-width: 480px) {
-		display: none;
-	}
+  @media screen and(max-width: 480px) {
+    display: none;
+  }
 }
