@@ -58,3 +58,13 @@
     	margin: auto;			
 	}			
 }
+.playlist-list-tree {
+	display: none;
+	&__item {
+		display: block;
+		padding-left: 10px;
+
+
+	}
+
+}

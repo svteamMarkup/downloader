@@ -2,12 +2,48 @@ mixin playlist(double_line)
 	-var modifier = attributes.class || ''
 	.playlist(class="#{modifier}")
 		.playlist-list
-			a(href="#" title="").playlist__item._first
-				i.fa.fa-arrow-circle-o-down    
+			.playlist__item._first
+				.playlist-list__folder
+					i.fa.fa-folder    
+					span
+						| VA - Русское радио. Бархатный сезон (2016)
+				.playlist-list-tree
+					.playlist-list-tree__item._folder
+						.playlist-list__folder
+							i.fa.fa-folder
+							span Зарубежное
+						.playlist-list-tree
+							a(href="#" title="").playlist-list-tree__item
+								i.fa.fa-arrow-circle-o-down
+								span Scorpions - Wind of Change.mp3
+							a(href="#" title="").playlist-list-tree__item
+								i.fa.fa-arrow-circle-o-down
+								span Scorpions - Still Loving You.mp3								
+						.playlist-list-tree__item._folder
+							.playlist-list__folder
+								i.fa.fa-folder
+								span Rock
+								.playlist-list-tree
+									a(href="#" title="").playlist-list-tree__item
+										i.fa.fa-arrow-circle-o-down
+										span Linkin Park - In The End.mp3
+									a(href="#" title="").playlist-list-tree__item
+										i.fa.fa-arrow-circle-o-down
+										span Linkin Park - Numb.mp3
+									.playlist-list__folder
+										i.fa.fa-folder
+										span Hard Rock
+										.playlist-list-tree
+											a(href="#" title="").playlist-list-tree__item
+												i.fa.fa-arrow-circle-o-down
+												span Linkin Park - In The End.mp3
+
+			a(href="#" title="").playlist__item
+				i.fa.fa-arrow-circle-o-down
 				span
 					|001 Макс Барских - Последний Летний День.mp3
 			a(href="#" title="").playlist__item
-				i.fa.fa-arrow-circle-o-down    
+				i.fa.fa-arrow-circle-o-down
 				span
 					|001 Макс Барских - Последний Летний День.mp3
 			a(href="#" title="").playlist__item
