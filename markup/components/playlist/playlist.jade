@@ -2,98 +2,108 @@ mixin playlist(double_line)
 	-var modifier = attributes.class || ''
 	.playlist(class="#{modifier}")
 		.playlist-list
-			.playlist__item._first
-				.playlist-list__folder
+			.playlist__item
+				.js-playlist-toggle
 					i.fa.fa-folder    
 					span
-						| VA - Русское радио. Бархатный сезон (2016)
-				.playlist-list-tree
-					.playlist-list-tree__item._folder
-						.playlist-list__folder
-							i.fa.fa-folder
-							span Зарубежное
-						.playlist-list-tree
-							a(href="#" title="").playlist-list-tree__item
+						| Best Hits - February 2017
+				.playlist-list-tree._parent
+					ul
+						li.playlist-list-tree__item: a(href="#" title="")
 								i.fa.fa-arrow-circle-o-down
-								span Scorpions - Wind of Change.mp3
-							a(href="#" title="").playlist-list-tree__item
+								span Quest Pistols Show - Лучше всех.mp3
+						li.playlist-list-tree__item: a(href="#" title="")
 								i.fa.fa-arrow-circle-o-down
-								span Scorpions - Still Loving You.mp3								
-						.playlist-list-tree__item._folder
-							.playlist-list__folder
-								i.fa.fa-folder
-								span Rock
-								.playlist-list-tree
-									a(href="#" title="").playlist-list-tree__item
+								span Время и Стекло - 505.mp3								
+						li.playlist-list-tree__item
+							i.fa.fa-folder    
+							span
+								| Dance
+							ul
+								li.playlist-list-tree__item
+									a(href="#" title="")
 										i.fa.fa-arrow-circle-o-down
-										span Linkin Park - In The End.mp3
-									a(href="#" title="").playlist-list-tree__item
+										span Sia - Cheap Thrills.mp3
+									li.playlist-list-tree__item
+										i.fa.fa-folder    
+										span
+											| Лучшее
+										ul
+											li.playlist-list-tree__item
+												a(href="#" title="")
+													i.fa.fa-arrow-circle-o-down
+													span Sia - Unstoppable.mp3
+											li.playlist-list-tree__item
+												i.fa.fa-folder    
+												span
+													| Самое Лучшее
+												ul
+													li.playlist-list-tree__item
+														a(href="#" title="")
+															i.fa.fa-arrow-circle-o-down
+															span Shawn Mendes - Treat Your Better.mp3
+													li.playlist-list-tree__item
+														i.fa.fa-folder    
+														span
+															| Самое самое лучшее
+														ul
+															li.playlist-list-tree__item: a(href="#" title="")
+																	i.fa.fa-arrow-circle-o-down
+																	span Imany - Don't be so shy.mp3
+															li.playlist-list-tree__item: a(href="#" title="")
+																	i.fa.fa-arrow-circle-o-down
+																	span Sia - The Greatest.mp3
+						li.playlist-list-tree__item
+							i.fa.fa-folder    
+							span
+								| Rock
+							ul
+								li.playlist-list-tree__item
+									a(href="#" title="")
 										i.fa.fa-arrow-circle-o-down
-										span Linkin Park - Numb.mp3
-									.playlist-list__folder
-										i.fa.fa-folder
-										span Hard Rock
-										.playlist-list-tree
-											a(href="#" title="").playlist-list-tree__item
-												i.fa.fa-arrow-circle-o-down
-												span Linkin Park - In The End.mp3
-
+										span Scorpions - Wind Of Change.mp3																																				
 			a(href="#" title="").playlist__item
 				i.fa.fa-arrow-circle-o-down
-				span
-					|001 Макс Барских - Последний Летний День.mp3
+				span 001 Макс Барских - Последний Летний День.mp3
 			a(href="#" title="").playlist__item
 				i.fa.fa-arrow-circle-o-down
-				span
-					|001 Макс Барских - Последний Летний День.mp3
+				span 001 Макс Барских - Последний Летний День.mp3
 			a(href="#" title="").playlist__item
 				i.fa.fa-arrow-circle-o-down    
-				span
-					|001 Макс Барских - Последний Летний День.mp3
+				span 001 Макс Барских - Последний Летний День.mp3
 			a(href="#" title="").playlist__item
 				i.fa.fa-arrow-circle-o-down    
-				span
-					|001 Макс Барских - Последний Летний День.mp3
+				span 001 Макс Барских - Последний Летний День.mp3
 			a(href="#" title="").playlist__item
 				i.fa.fa-arrow-circle-o-down    
-				span
-					|001 Макс Барских - Последний Летний День.mp3
+				span 001 Макс Барских - Последний Летний День.mp3
 			a(href="#" title="").playlist__item
 				i.fa.fa-arrow-circle-o-down    
-				span
-					|001 Макс Барских - Последний Летний День.mp3
+				span 001 Макс Барских - Последний Летний День.mp3
 			a(href="#" title="").playlist__item
 				i.fa.fa-arrow-circle-o-down    
-				span
-					|001 Макс Барских - Последний Летний День.mp3
+				span 001 Макс Барских - Последний Летний День.mp3
 			a(href="#" title="").playlist__item
 				i.fa.fa-arrow-circle-o-down    
-				span
-					|001 Макс Барских - Последний Летний День.mp3
+				span 001 Макс Барских - Последний Летний День.mp3
 			a(href="#" title="").playlist__item
 				i.fa.fa-arrow-circle-o-down    
-				span
-					|001 Макс Барских - Последний Летний День.mp3
+				span 001 Макс Барских - Последний Летний День.mp3
 			a(href="#" title="").playlist__item
 				i.fa.fa-arrow-circle-o-down    
-				span
-					|001 Макс Барских - Последний Летний День.mp3
+				span 001 Макс Барских - Последний Летний День.mp3
 			a(href="#" title="").playlist__item
 				i.fa.fa-arrow-circle-o-down    
-				span
-					|001 Макс Барских - Последний Летний День.mp3
+				span 001 Макс Барских - Последний Летний День.mp3
 			a(href="#" title="").playlist__item
 				i.fa.fa-arrow-circle-o-down    
-				span
-					|001 Макс Барских - Последний Летний День.mp3
+				span 001 Макс Барских - Последний Летний День.mp3
 			a(href="#" title="").playlist__item
 				i.fa.fa-arrow-circle-o-down    
-				span
-					|001 Макс Барских - Последний Летний День.mp3
+				span 001 Макс Барских - Последний Летний День.mp3
 			a(href="#" title="").playlist__item
 				i.fa.fa-arrow-circle-o-down    
-				span
-					|001 Макс Барских - Последний Летний День.mp3
+				span 001 Макс Барских - Последний Летний День.mp3
 	-if(double_line == true)				
 		.double-line
 	-else

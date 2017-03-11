@@ -18,14 +18,14 @@
 		font-size: 13px;
 		margin-bottom: 5px;
 		position: relative;
+		cursor: pointer;
 		padding-left: 23px;
 		@media screen and(max-width: 1050px) {
 			font-size: 16px;
+			margin-bottom: 15px;
 		}	
 		@media screen and(max-width: 480px) {
 			padding-left: 0;
-			margin-bottom: 15px;
-			font-size: 16px;
 		}			
 		&:before {
 			position: absolute;
@@ -56,15 +56,50 @@
 		border-left: none;
 		width: 90%;
     	margin: auto;			
-	}			
+	}
 }
 .playlist-list-tree {
 	display: none;
-	&__item {
-		display: block;
+	border-left: 1px solid #b0b0b0;
+	&._parent {
 		padding-left: 10px;
-
-
+		@media screen and(max-width: 1050px) {		
+			margin-top: 5px;
+		}
 	}
-
+	&__item {
+		padding-left: 10px;
+		a {
+			display: block;
+			position: relative;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			@media screen and(max-width: 1050px) {
+				font-size: 16px;
+				margin-top: 8px;
+				margin-bottom: 8px;				
+			}	
+			@media screen and(max-width: 480px) {
+				padding-left: 0;
+			}					
+			&:before {
+				position: absolute;
+				content: '';
+				top: 6px;
+				left: -17px;
+				width: 15px;
+				height: 1px;
+				background-color: #b0b0b0;
+				@media screen and(max-width: 1050px) {
+					top: 9px;
+				}
+				@media screen and(max-width: 480px) {
+					display: none;
+				}
+			}				
+		}
+	}
+	ul {
+		@include nl;
+	}
 }
