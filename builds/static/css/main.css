@@ -3431,6 +3431,55 @@ input, textarea {
   }
 }
 
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 205px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1050px) {
+  .pagination {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pagination {
+    width: 100%;
+  }
+}
+
+.pagination__item {
+  padding: 6px 9px;
+  background-color: #f5f5f5;
+  border: 1px solid #cacaca;
+  color: #000;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  .pagination__item {
+    padding: 13px 16px;
+  }
+}
+
+.pagination__item:hover {
+  background-color: #e5e5e5;
+}
+
+.pagination__item._active {
+  background-color: #fff;
+}
+
 .playlist {
   background-color: #f5f5f5;
   padding: 10px 0 20px 23px;
@@ -3506,6 +3555,23 @@ input, textarea {
   border-left: 1px solid #b0b0b0;
   width: 440px;
   padding-top: 15px;
+  position: relative;
+}
+
+.playlist-list:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 1px;
+  height: 9px;
+  background-color: #f5f5f5;
+  left: -1px;
+}
+
+@media screen and (max-width: 1050px) {
+  .playlist-list:after {
+    height: 12px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -3518,7 +3584,6 @@ input, textarea {
 
 .playlist-list-tree {
   display: none;
-  border-left: 1px solid #b0b0b0;
 }
 
 .playlist-list-tree._parent {
@@ -3751,53 +3816,4 @@ input, textarea {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 7px;
-}
-
-.pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 205px;
-  margin-bottom: 30px;
-}
-
-@media screen and (max-width: 1050px) {
-  .pagination {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .pagination {
-    width: 100%;
-  }
-}
-
-.pagination__item {
-  padding: 6px 9px;
-  background-color: #f5f5f5;
-  border: 1px solid #cacaca;
-  color: #000;
-  font-size: 14px;
-  line-height: 1;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 480px) {
-  .pagination__item {
-    padding: 13px 16px;
-  }
-}
-
-.pagination__item:hover {
-  background-color: #e5e5e5;
-}
-
-.pagination__item._active {
-  background-color: #fff;
 }
