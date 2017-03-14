@@ -1,167 +1,206 @@
 .playlist {
-	background-color: #f5f5f5;
-	padding: 10px 0 20px 23px;
 	margin-bottom: 15px;
+	padding: 10px 0 20px 23px;
+
+	background-color: #f5f5f5;
 	@media screen and(max-width: 480px) {
 		padding-left: 0;
-	}			
+	}
 	&._margin {
-		margin-left: 20px;
 		margin-right: 20px;
+		margin-left: 20px;
 		@media screen and(max-width: 1050px) {
-			margin-left: 0;
 			margin-right: 0;
-		}			
+			margin-left: 0;
+		}
+	}
+	ul {
+		margin-top: 0;
+		padding-left: 17px;
+
+		list-style-type: none;
 	}
 	&__item {
-		display: block;
-		font-size: 13px;
-		margin-bottom: 5px;
 		position: relative;
+
+		display: block;
+
+		margin-bottom: 5px;
 		padding-left: 23px;
+
+		font-size: 13px;
 		@media screen and(max-width: 1050px) {
-			font-size: 16px;
 			margin-bottom: 15px;
-		}	
+
+			font-size: 15px;
+		}
 		@media screen and(max-width: 480px) {
 			padding-left: 0;
 		}
 		&:after,
 		&:before {
 			position: absolute;
-			color: #b1b1b1;
 		}
 		&:after {
-			content: '\f01a';
 			top: 0;
 			left: 20px;
-			font-family: 'FontAwesome';
-			@media screen and(max-width: 480px) {			
+
+			content: "\f01a";
+
+			color: #b1b1b1;
+
+			font-family: "FontAwesome";
+			@media screen and(max-width: 480px) {
 				left: 0;
-			}	
-		}			
+			}
+		}
 		&:before {
-			content: '';
 			top: 6px;
 			left: 0;
+
 			width: 15px;
 			height: 1px;
+
+			content: "";
+
 			background-color: #b0b0b0;
 			@media screen and(max-width: 480px) {
 				display: none;
-			}			
-		}
-		&._folder {
-			&:after {
-				content: '\f07b';
-				top: 0;
-				left: 25px;
-				font-family: 'FontAwesome';
-				@media screen and(max-width: 480px) {				
-					left: 0;
-				}	
 			}
-		}		
+		}
 		span {
 			padding-left: 18px;
 		}
 	}
 }
 .playlist-list {
-	border-left: 1px solid #b0b0b0;
+	position: relative;
+
 	width: 440px;
 	padding-top: 15px;
-	position: relative;
-	&:after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		width: 1px;
-		height: 9px;
-		background-color: #f5f5f5;
-		left: -1px;
-		@media screen and(max-width: 1050px) {
-			height: 12px;
-		}	
-	}
-	@media screen and(max-width: 480px) {
-		border-left: none;
-		width: 90%;
-    	margin: auto;			
-	}
-}
-.playlist-list-tree {
-	@media screen and(max-width: 1050px) {		
+
+	border-left: 1px solid #b0b0b0;
+	@media screen and(max-width: 1050px) {
 		margin-top: 5px;
-	}
-	ul {
-		list-style-type: none;
-		margin-top: 0;
-		margin-bottom: 0;
-	}	
-	& > ul {
-		padding-left: 18px;
 	}
 	&__folder {
 		position: relative;
-		ul {
-			padding-left: 17px;		
+
+		font-size: 13px;
+		@media screen and(max-width: 1050px) {
+			font-size: 15px;
 		}
-		& > span:before {
+		&:before,
+		&:after {
 			position: absolute;
-			content: '\f07b';
+		}
+		&:before {
 			top: 0;
-			color: #b1b1b1;
 			left: 0;
-			font-family: 'FontAwesome';
-		}				
+
+			content: "\f07b";
+
+			color: #b1b1b1;
+
+			font-family: "FontAwesome";
+			font-size: 13px;
+		}
+		&:after {
+			top: 6px;
+			left: -16px;
+
+			width: 15px;
+			height: 1px;
+
+			content: "";
+
+			background-color: #b0b0b0;
+		}
+		span {
+			padding-left: 19px;
+		}
 	}
 	&__item {
 		position: relative;
+
 		margin-top: 5px;
 		margin-bottom: 5px;
+
+		font-size: 13px;
 		@media screen and(max-width: 1050px) {
-			font-size: 16px;
 			margin-top: 8px;
-			margin-bottom: 8px;		
-		}	
+			margin-bottom: 8px;
+
+			font-size: 15px;
+		}
 		@media screen and(max-width: 480px) {
 			padding-left: 0;
 		}
 		&:before,
 		&:after {
 			position: absolute;
-			content: '';				
+
+			content: "";
 		}
 		&:before {
 			top: 50%;
-			transform: translateY(-50%);
 			left: -11px;
+
 			width: 10px;
 			height: 1px;
+
+			transform: translateY(-50%);
+
 			background-color: #b0b0b0;
 			@media screen and(max-width: 1050px) {
 				top: 9px;
 			}
 		}
 		&:after {
-			top: -13px;
+			top: -14px;
 			left: -12px;
+
 			width: 1px;
-			height: 21px;
+			height: 23px;
+
 			background-color: #b0b0b0;
 			@media screen and(max-width: 1050px) {
 				top: -17px;
+
 				height: 27px;
-			}				
+			}
 		}
 		& > a:before {
 			position: absolute;
-			content: '\f01a';
 			top: 0;
-			color: #b1b1b1;
 			left: 0;
-			font-family: 'FontAwesome';
-		}		
+
+			content: "\f01a";
+
+			color: #b1b1b1;
+
+			font-family: "FontAwesome";
+		}
+	}
+	&:after {
+		position: absolute;
+		bottom: 0;
+		left: -1px;
+
+		width: 1px;
+		height: 9px;
+
+		content: "";
+
+		background-color: #f5f5f5;
+		@media screen and(max-width: 1050px) {
+			height: 12px;
+		}
+	}
+	@media screen and(max-width: 480px) {
+		width: 90%;
+		margin: auto;
+
+		border-left: none;
 	}
 }
