@@ -13,7 +13,7 @@
   font-style: normal;
 }
 
-.fa {
+.fa, .tree ul li:before {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -86,11 +86,11 @@
   float: right;
 }
 
-.fa.fa-pull-left {
+.fa.fa-pull-left, .tree ul li.fa-pull-left:before {
   margin-right: .3em;
 }
 
-.fa.fa-pull-right {
+.fa.fa-pull-right, .tree ul li.fa-pull-right:before {
   margin-left: .3em;
 }
 
@@ -103,11 +103,11 @@
   float: left;
 }
 
-.fa.pull-left {
+.fa.pull-left, .tree ul li.pull-left:before {
   margin-right: .3em;
 }
 
-.fa.pull-right {
+.fa.pull-right, .tree ul li.pull-right:before {
   margin-left: .3em;
 }
 
@@ -686,7 +686,7 @@
   content: "";
 }
 
-.fa-folder:before {
+.fa-folder:before, .tree__folder:before {
   content: "";
 }
 
@@ -870,7 +870,7 @@
   content: "";
 }
 
-.fa-arrow-circle-down:before {
+.fa-arrow-circle-down:before, .tree__file:before {
   content: "";
 }
 
@@ -3205,13 +3205,13 @@ input, textarea {
   }
 }
 
-.downloads-list__title .fa {
+.downloads-list__title .fa, .downloads-list__title .tree ul li:before, .tree ul .downloads-list__title li:before {
   color: #4b81bd;
   font-size: 16px;
   padding-right: 5px;
 }
 
-.downloads-list__title .fa._green {
+.downloads-list__title .fa._green, .downloads-list__title .tree ul li._green:before, .tree ul .downloads-list__title li._green:before {
   color: #18973c;
 }
 
@@ -3361,7 +3361,7 @@ input, textarea {
   }
 }
 
-.downloads-list-table-status .fa {
+.downloads-list-table-status .fa, .downloads-list-table-status .tree ul li:before, .tree ul .downloads-list-table-status li:before {
   color: #4b81bd;
 }
 
@@ -3849,4 +3849,47 @@ input, textarea {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 7px;
+}
+
+.tree {
+  font-family: 'Lato-Regular';
+  font-size: 13px;
+  margin-bottom: 15px;
+  padding: 10px 0 20px 23px;
+  background-color: #f5f5f5;
+}
+
+.tree ul {
+  padding-top: 5px;
+  padding-left: 5px;
+  list-style: none;
+  border-left: 1px solid #b0b0b0;
+}
+
+.tree ul li {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 27px;
+}
+
+.tree ul li ul {
+  margin-left: -14px;
+}
+
+.tree ul li:before {
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  color: #b1b1b1;
+}
+
+.tree ul li:after {
+  position: absolute;
+  top: 8px;
+  left: -5px;
+  display: block;
+  width: 12px;
+  height: 1px;
+  content: '';
+  background-color: #b0b0b0;
 }

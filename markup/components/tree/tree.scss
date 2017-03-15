@@ -1,0 +1,59 @@
+.tree {
+  font-family: 'Lato-Regular';
+  font-size: 13px;
+
+  margin-bottom: 15px;
+  padding: 10px 0 20px 23px;
+
+  background-color: #f5f5f5;
+  ul {
+    padding-top: 5px;
+    padding-left: 5px;
+
+    list-style: none;
+
+    border-left: 1px solid #b0b0b0;
+    li {
+      position: relative;
+
+      margin-bottom: 5px;
+      padding-left: 27px;
+      ul {
+        margin-left: -14px;
+      }
+      &:before {
+        position: absolute;
+        top: 2px;
+        left: 8px;
+
+        color: #b1b1b1;
+
+        @extend .fa;
+      }
+      &:after {
+        position: absolute;
+        top: 8px;
+        left: -5px;
+
+        display: block;
+
+        width: 12px;
+        height: 1px;
+
+        content: '';
+
+        background-color: #b0b0b0;
+      }
+    }
+  }
+  &__folder {
+    &:before {
+      @extend .fa-folder;
+    }
+  }
+  &__file {
+    &:before {
+      @extend .fa-arrow-circle-down;
+    }
+  }
+}
