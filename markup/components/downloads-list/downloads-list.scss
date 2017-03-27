@@ -1,172 +1,211 @@
 .downloads-list {
-	margin-bottom: 60px;
-	@media screen and(max-width: 760px) {
-		margin-bottom: 30px;
-	}		
-	&._last {
-		margin-bottom: 0;
-	}
-	&__title {
-		@extend .main-title;
-		margin-top: 0;
-		margin-bottom: 5px;
-		@media screen and(max-width: 960px) {
-			margin-bottom: 12px;
-		}		
-		.fa {
-			color: #4b81bd;
-			font-size: 16px;
-			padding-right: 5px;
-			&._green {
-				color: #18973c;
-			}
-		}
-	}
+  margin-bottom: 60px;
+  @media screen and(max-width: 760px) {
+    margin-bottom: 30px;
+  }
+  &._last {
+    margin-bottom: 0;
+  }
+  &__title {
+    margin-top: 0;
+    margin-bottom: 5px;
+
+    @extend .main-title;
+    @media screen and(max-width: 960px) {
+      margin-bottom: 12px;
+    }
+    .fa {
+      position: relative;
+
+      margin-right: 5px;
+
+      text-indent: -9999px;
+    }
+    .fa-refresh {
+      top: 3px;
+
+      @include bg-svg($update);
+    }
+    .fa-check {
+      top: 5px;
+
+      @include bg-svg($check);
+    }
+  }
 }
 .downloads-list-table {
-	border-top: 1px solid #dadada;
-	&__row {
-		display: flex;
-		padding-top: 12px;
-		padding-bottom: 12px;
-		border-bottom: 1px solid #dadada;
-		justify-content: space-between;
-		padding-left: 20px;
-		@media screen and(max-width: 480px) {
-			display: block;
-			padding-left: 15px;
-		}				
-		&._top {
-			background-color: #f9f9f9;
-			align-items: center;
-			border-left: 1px solid #dadada;
-			border-right: 1px solid #dadada;
-		}
-		&._completed {
-			padding-top: 5px;
-			padding-bottom: 5px;
-		}
-	}
-	&__col {
-		@media screen and(max-width: 480px) {
-			margin-bottom: 15px;
-		}	
-		&:nth-child(1) {
-			width: 360px;
-			@media screen and(max-width: 960px) {
-				width: 30%;
-			}	
-		}
-		&:nth-child(2) {
-			width: 400px;
-			@media screen and(max-width: 960px) {
-				width: 40%;
-			}
-		}
-		&:nth-child(3) {
-			width: 230px;
-			@media screen and(max-width: 960px) {
-				width: 20%;
-			}
-		}		
-		&:nth-child(1),
-		&:nth-child(2),
-		&:nth-child(3) {
+  border-top: 1px solid #dadada;
+  &__row {
+    display: flex;
 
-			@media screen and(max-width: 480px) {
-				width: auto;
-			}			
-		}				
-		&._flex {
-			display: flex;
-			justify-content: flex-start;
-			align-items: center;
-		}
-	}
-	&__heading-title {
-		text-transform: uppercase;
-		font-size: 14px;
-		color: #807b7b;
-	}
-	&__name {
-		color: #a1a1a1;
-		&._blue {
-			color: #104e88;
-			font-family: 'Lato-Semibold';
-			margin-bottom: 15px;
-		}
-	}
-	&__status {
-		display: flex;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
 
-	}
-	&__button {
-		@extend .button;
-		font-size: 12px;
-		text-transform: uppercase;
-		margin-right: 4px;
-		@media screen and(max-width: 960px) {
-			margin-bottom: 12px;
-		}	
-		@media screen and(max-width: 480px) {
-			display: block;
-			margin-bottom: 12px;
-			text-align: center;
-		}			
-	}
+    border-bottom: 1px solid #dadada;
+
+    justify-content: space-between;
+    @media screen and(max-width: 480px) {
+      display: block;
+
+      padding-left: 15px;
+    }
+    &._top {
+      border-right: 1px solid #dadada;
+      border-left: 1px solid #dadada;
+      background-color: #f9f9f9;
+
+      align-items: center;
+    }
+    &._completed {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+  }
+  &__col {
+    @media screen and(max-width: 480px) {
+      margin-bottom: 15px;
+    }
+    &:nth-child(1) {
+      width: 360px;
+      @media screen and(max-width: 960px) {
+        width: 30%;
+      }
+    }
+    &:nth-child(2) {
+      width: 400px;
+      @media screen and(max-width: 960px) {
+        width: 40%;
+      }
+    }
+    &:nth-child(3) {
+      width: 230px;
+      @media screen and(max-width: 960px) {
+        width: 20%;
+      }
+    }
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      @media screen and(max-width: 480px) {
+        width: auto;
+      }
+    }
+    &._flex {
+      display: flex;
+
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  &__heading-title {
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    color: #807b7b;
+  }
+  &__name {
+    color: #a1a1a1;
+    &._blue {
+      font-family: 'Lato-Semibold';
+
+      margin-bottom: 15px;
+
+      color: #104e88;
+    }
+  }
+  &__status {
+    display: flex;
+  }
+  &__button {
+    font-size: 12px;
+
+    margin-right: 4px;
+
+    text-transform: uppercase;
+
+    @extend .button;
+    @media screen and(max-width: 960px) {
+      margin-bottom: 12px;
+    }
+    @media screen and(max-width: 480px) {
+      display: block;
+
+      margin-bottom: 12px;
+
+      text-align: center;
+    }
+  }
 }
 .downloads-list-table-status {
-	display: flex;
-	@media screen and(max-width: 480px) {
-		display: block;
-	}		
-	.fa {
-		color: #4b81bd;
-	}
-	&__left {
-		width: 164px;
-		span {
-			padding-left: 10px;
-		}		
-	}
+  display: flex;
+  @media screen and(max-width: 480px) {
+    display: block;
+  }
+  .fa {
+    text-indent: -9999px;
+  }
+  .fa-clock-o {
+  	@include bg-svg($time);
+  }
+  .fa-check-circle {
+  	@include bg-svg($ok);
+  }
+  .fa-arrow-circle-o-down {
+  	@include bg-svg($download);
+  }
+  &__left {
+    width: 164px;
+    span {
+      padding-left: 10px;
+    }
+  }
 }
 .downloads-list-table-form {
-	margin-left: 45px;
-	@media screen and(max-width: 960px) {
-		display: flex;
-	}
-	@media screen and(max-width: 760px) {
-		display: block;
-	}	
-	@media screen and(max-width: 480px) {
-		margin-left: 0;
-		width: 96%;
-	}		
-	&__input {
-		@extend .input-form;
-		height: 25px;
-		width: 130px;
-		font-size: 14px;
-		padding-left: 4px;
-		font-family: 'Lato-Italic';
-		@media screen and(max-width: 480px) {
-			height: 45px;
-			display: block;
-			width: 100%;
-			font-size: 16px;
-			margin-bottom: 5px;
-		}					
-	}
-	&__submit {
-		@extend .button;
-		padding: 5px 13px 5px;
-		text-transform: uppercase;
-		line-height: 1;
-		font-size: 14px;
-		@media screen and(max-width: 480px) {
-			width: 100%;
-			padding-top: 12px;
-			padding-bottom: 12px;
-		}	
-	}	
+  margin-left: 45px;
+  @media screen and(max-width: 960px) {
+    display: flex;
+  }
+  @media screen and(max-width: 760px) {
+    display: block;
+  }
+  @media screen and(max-width: 480px) {
+    width: 96%;
+    margin-left: 0;
+  }
+  &__input {
+    font-family: 'Lato-Italic';
+    font-size: 14px;
+
+    width: 130px;
+    height: 25px;
+    padding-left: 4px;
+
+    @extend .input-form;
+    @media screen and(max-width: 480px) {
+      font-size: 16px;
+
+      display: block;
+
+      width: 100%;
+      height: 45px;
+      margin-bottom: 5px;
+    }
+  }
+  &__submit {
+    font-size: 14px;
+    line-height: 1;
+
+    padding: 5px 13px 5px;
+
+    text-transform: uppercase;
+
+    @extend .button;
+    @media screen and(max-width: 480px) {
+      width: 100%;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+  }
 }

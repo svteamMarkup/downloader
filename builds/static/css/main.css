@@ -3206,13 +3206,27 @@ input, textarea {
 }
 
 .downloads-list__title .fa, .downloads-list__title .tree ul li:before, .tree ul .downloads-list__title li:before {
-  color: #4b81bd;
-  font-size: 16px;
-  padding-right: 5px;
+  position: relative;
+  margin-right: 5px;
+  text-indent: -9999px;
 }
 
-.downloads-list__title .fa._green, .downloads-list__title .tree ul li._green:before, .tree ul .downloads-list__title li._green:before {
-  color: #18973c;
+.downloads-list__title .fa-refresh {
+  top: 3px;
+  background-image: url("../images/svg-sprite/sprite.svg");
+  background-position: -4px -64px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+
+.downloads-list__title .fa-check {
+  top: 5px;
+  background-image: url("../images/svg-sprite/sprite.svg");
+  background-position: -4px -84px;
+  width: 16px;
+  height: 13px;
+  background-repeat: no-repeat;
 }
 
 .downloads-list-table {
@@ -3225,11 +3239,11 @@ input, textarea {
   display: flex;
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 20px;
   border-bottom: 1px solid #dadada;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-left: 20px;
 }
 
 @media screen and (max-width: 480px) {
@@ -3240,12 +3254,12 @@ input, textarea {
 }
 
 .downloads-list-table__row._top {
+  border-right: 1px solid #dadada;
+  border-left: 1px solid #dadada;
   background-color: #f9f9f9;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-left: 1px solid #dadada;
-  border-right: 1px solid #dadada;
 }
 
 .downloads-list-table__row._completed {
@@ -3308,8 +3322,8 @@ input, textarea {
 }
 
 .downloads-list-table__heading-title {
-  text-transform: uppercase;
   font-size: 14px;
+  text-transform: uppercase;
   color: #807b7b;
 }
 
@@ -3318,9 +3332,9 @@ input, textarea {
 }
 
 .downloads-list-table__name._blue {
-  color: #104e88;
   font-family: 'Lato-Semibold';
   margin-bottom: 15px;
+  color: #104e88;
 }
 
 .downloads-list-table__status {
@@ -3331,8 +3345,8 @@ input, textarea {
 
 .downloads-list-table__button {
   font-size: 12px;
-  text-transform: uppercase;
   margin-right: 4px;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 960px) {
@@ -3362,7 +3376,31 @@ input, textarea {
 }
 
 .downloads-list-table-status .fa, .downloads-list-table-status .tree ul li:before, .tree ul .downloads-list-table-status li:before {
-  color: #4b81bd;
+  text-indent: -9999px;
+}
+
+.downloads-list-table-status .fa-clock-o {
+  background-image: url("../images/svg-sprite/sprite.svg");
+  background-position: -4px -44px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+
+.downloads-list-table-status .fa-check-circle {
+  background-image: url("../images/svg-sprite/sprite.svg");
+  background-position: -4px -24px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+}
+
+.downloads-list-table-status .fa-arrow-circle-o-down {
+  background-image: url("../images/svg-sprite/sprite.svg");
+  background-position: -4px -4px;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
 }
 
 .downloads-list-table-status__left {
@@ -3393,34 +3431,34 @@ input, textarea {
 
 @media screen and (max-width: 480px) {
   .downloads-list-table-form {
-    margin-left: 0;
     width: 96%;
+    margin-left: 0;
   }
 }
 
 .downloads-list-table-form__input {
-  height: 25px;
-  width: 130px;
-  font-size: 14px;
-  padding-left: 4px;
   font-family: 'Lato-Italic';
+  font-size: 14px;
+  width: 130px;
+  height: 25px;
+  padding-left: 4px;
 }
 
 @media screen and (max-width: 480px) {
   .downloads-list-table-form__input {
-    height: 45px;
+    font-size: 16px;
     display: block;
     width: 100%;
-    font-size: 16px;
+    height: 45px;
     margin-bottom: 5px;
   }
 }
 
 .downloads-list-table-form__submit {
+  font-size: 14px;
+  line-height: 1;
   padding: 5px 13px 5px;
   text-transform: uppercase;
-  line-height: 1;
-  font-size: 14px;
 }
 
 @media screen and (max-width: 480px) {
@@ -3860,6 +3898,7 @@ input, textarea {
 }
 
 .tree ul {
+  position: relative;
   padding-top: 5px;
   padding-left: 5px;
   list-style: none;
