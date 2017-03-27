@@ -3180,6 +3180,55 @@ input, textarea {
   box-sizing: border-box;
 }
 
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 205px;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1050px) {
+  .pagination {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pagination {
+    width: 100%;
+  }
+}
+
+.pagination a {
+  padding: 6px 9px;
+  background-color: #f5f5f5;
+  border: 1px solid #cacaca;
+  color: #000;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  .pagination a {
+    padding: 13px 16px;
+  }
+}
+
+.pagination a:hover {
+  background-color: #e5e5e5;
+}
+
+.pagination a._active {
+  background-color: #fff;
+}
+
 .downloads-list {
   margin-bottom: 60px;
 }
@@ -3469,55 +3518,6 @@ input, textarea {
   }
 }
 
-.pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 205px;
-  margin-bottom: 30px;
-}
-
-@media screen and (max-width: 1050px) {
-  .pagination {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .pagination {
-    width: 100%;
-  }
-}
-
-.pagination__item {
-  padding: 6px 9px;
-  background-color: #f5f5f5;
-  border: 1px solid #cacaca;
-  color: #000;
-  font-size: 14px;
-  line-height: 1;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 480px) {
-  .pagination__item {
-    padding: 13px 16px;
-  }
-}
-
-.pagination__item:hover {
-  background-color: #e5e5e5;
-}
-
-.pagination__item._active {
-  background-color: #fff;
-}
-
 .playlist {
   margin-bottom: 15px;
   padding: 10px 0 20px 23px;
@@ -3747,19 +3747,19 @@ input, textarea {
 }
 
 .progress {
-  width: 155px;
-  height: 18px;
-  background-color: #f5f5f5;
   position: relative;
+  width: 200px;
+  height: 18px;
+  background-color: #999;
 }
 
 .progress__status {
-  height: 100%;
-  width: 15%;
-  background-color: #4b81bd;
   position: absolute;
   top: 0;
   left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #4b81bd;
 }
 
 .progress__status._some {
@@ -3772,17 +3772,58 @@ input, textarea {
 
 .progress__text {
   font-size: 12px;
-  text-align: center;
-  color: #4b81bd;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  top: 2px;
+  width: 200px;
+  text-align: center;
+  color: #fff;
 }
 
 .progress__text._full, .progress__text._some {
   color: #fff;
+}
+
+.tree {
+  font-family: 'Lato-Regular';
+  font-size: 13px;
+  margin-bottom: 15px;
+  padding: 10px 0 20px 23px;
+  background-color: #f5f5f5;
+}
+
+.tree ul {
+  padding-top: 5px;
+  padding-left: 5px;
+  list-style: none;
+  border-left: 1px solid #b0b0b0;
+}
+
+.tree ul li {
+  position: relative;
+  margin-bottom: 5px;
+  padding-left: 27px;
+}
+
+.tree ul li ul {
+  margin-left: -14px;
+}
+
+.tree ul li:before {
+  position: absolute;
+  top: 2px;
+  left: 8px;
+  color: #b1b1b1;
+}
+
+.tree ul li:after {
+  position: absolute;
+  top: 8px;
+  left: -5px;
+  display: block;
+  width: 12px;
+  height: 1px;
+  content: '';
+  background-color: #b0b0b0;
 }
 
 .song-block {
@@ -3887,48 +3928,4 @@ input, textarea {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 7px;
-}
-
-.tree {
-  font-family: 'Lato-Regular';
-  font-size: 13px;
-  margin-bottom: 15px;
-  padding: 10px 0 20px 23px;
-  background-color: #f5f5f5;
-}
-
-.tree ul {
-  position: relative;
-  padding-top: 5px;
-  padding-left: 5px;
-  list-style: none;
-  border-left: 1px solid #b0b0b0;
-}
-
-.tree ul li {
-  position: relative;
-  margin-bottom: 5px;
-  padding-left: 27px;
-}
-
-.tree ul li ul {
-  margin-left: -14px;
-}
-
-.tree ul li:before {
-  position: absolute;
-  top: 2px;
-  left: 8px;
-  color: #b1b1b1;
-}
-
-.tree ul li:after {
-  position: absolute;
-  top: 8px;
-  left: -5px;
-  display: block;
-  width: 12px;
-  height: 1px;
-  content: '';
-  background-color: #b0b0b0;
 }
