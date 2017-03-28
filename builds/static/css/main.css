@@ -3406,6 +3406,7 @@ input, textarea {
 .downloads-list-table-status .fa-download,
 .downloads-list-table-status .fa-timer {
   position: relative;
+  top: -15px;
   padding-left: 15px;
 }
 
@@ -3492,14 +3493,7 @@ input, textarea {
 }
 
 .pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 205px;
   margin-bottom: 30px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 @media screen and (max-width: 1050px) {
@@ -3521,7 +3515,6 @@ input, textarea {
   line-height: 1;
   display: inline-block;
   padding: 6px 9px;
-  margin-right: 10px;
   text-decoration: none;
   color: #000;
   border: 1px solid #cacaca;

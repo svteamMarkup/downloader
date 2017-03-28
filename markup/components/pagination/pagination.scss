@@ -1,10 +1,5 @@
 .pagination {
-  display: flex;
-
-  width: 205px;
   margin-bottom: 30px;
-
-  justify-content: space-between;
   @media screen and(max-width: 1050px) {
     width: 50%;
     margin-right: auto;
@@ -20,7 +15,6 @@
     display: inline-block;
 
     padding: 6px 9px;
-    margin-right: 10px;
 
     text-decoration: none;
 
