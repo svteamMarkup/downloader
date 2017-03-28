@@ -1,32 +1,40 @@
 .pagination {
-	display: flex;
-	justify-content: space-between;
-	width: 205px;
-	margin-bottom: 30px;
-	@media screen and(max-width: 1050px) {
-		width: 50%;
-		margin-left: auto;
-		margin-right: auto;
-	}	
-	@media screen and(max-width: 480px) {
-		width: 100%;
-	}	
-	a {
-		padding: 6px 9px;
-		background-color: #f5f5f5;
-		border: 1px solid #cacaca;
-		color: #000;
-		font-size: 14px;
-		line-height: 1;
-		text-decoration: none;
-		@media screen and(max-width: 480px) {
-			padding: 13px 16px;
-		}			
-		&:hover {
-			background-color: darken(#f2f2f2, 5%);
-		}		
-		&._active {
-			background-color: #fff;
-		}
-	}
+  display: flex;
+
+  width: 205px;
+  margin-bottom: 30px;
+
+  justify-content: space-between;
+  @media screen and(max-width: 1050px) {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media screen and(max-width: 480px) {
+    width: 100%;
+  }
+  a {
+    font-size: 14px;
+    line-height: 1;
+
+    display: inline-block;
+
+    padding: 6px 9px;
+    margin-right: 10px;
+
+    text-decoration: none;
+
+    color: #000;
+    border: 1px solid #cacaca;
+    background-color: #f5f5f5;
+    @media screen and(max-width: 480px) {
+      padding: 13px 16px;
+    }
+    &:hover {
+      background-color: darken(#f2f2f2, 5%);
+    }
+    &.active {
+      background-color: #fff;
+    }
+  }
 }
