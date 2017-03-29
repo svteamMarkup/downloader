@@ -2,6 +2,9 @@ mixin downloads-list(search,buttons,active)
 	-var modifier = attributes.class || ''
 	.downloads-list(class="#{modifier}")
 		h1.downloads-list__title 
+			i.fa.fa-down
+			| Какая-то еще загрузка
+		h1.downloads-list__title 
 			-if(active == true)
 				i.fa.fa-refresh
 				| Активные загрузки

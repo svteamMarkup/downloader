@@ -3214,7 +3214,7 @@ input, textarea {
 .downloads-list__title .fa-refresh {
   top: 3px;
   background-image: url("../images/svg-sprite/sprite.svg");
-  background-position: -4px -84px;
+  background-position: -4px -104px;
   width: 16px;
   height: 16px;
   background-repeat: no-repeat;
@@ -3223,9 +3223,18 @@ input, textarea {
 .downloads-list__title .fa-check {
   top: 5px;
   background-image: url("../images/svg-sprite/sprite.svg");
-  background-position: -4px -104px;
+  background-position: -4px -124px;
   width: 16px;
   height: 13px;
+  background-repeat: no-repeat;
+}
+
+.downloads-list__title .fa-down {
+  top: 0px;
+  background-image: url("../images/svg-sprite/sprite.svg");
+  background-position: -4px -4px;
+  width: 16px;
+  height: 16px;
   background-repeat: no-repeat;
 }
 
@@ -3381,7 +3390,7 @@ input, textarea {
 
 .downloads-list-table-status .fa-clock-o {
   background-image: url("../images/svg-sprite/sprite.svg");
-  background-position: -4px -64px;
+  background-position: -4px -84px;
   width: 16px;
   height: 16px;
   background-repeat: no-repeat;
@@ -3389,7 +3398,7 @@ input, textarea {
 
 .downloads-list-table-status .fa-check-circle {
   background-image: url("../images/svg-sprite/sprite.svg");
-  background-position: -4px -44px;
+  background-position: -4px -64px;
   width: 16px;
   height: 16px;
   background-repeat: no-repeat;
@@ -3397,7 +3406,7 @@ input, textarea {
 
 .downloads-list-table-status .fa-arrow-circle-o-down {
   background-image: url("../images/svg-sprite/sprite.svg");
-  background-position: -4px -4px;
+  background-position: -4px -24px;
   width: 16px;
   height: 16px;
   background-repeat: no-repeat;
@@ -3502,6 +3511,49 @@ input, textarea {
     padding-top: 12px;
     padding-bottom: 12px;
   }
+}
+
+.pagination {
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1050px) {
+  .pagination {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pagination {
+    width: 100%;
+  }
+}
+
+.pagination a {
+  font-size: 14px;
+  line-height: 1;
+  display: inline-block;
+  padding: 6px 9px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #cacaca;
+  background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 480px) {
+  .pagination a {
+    padding: 13px 16px;
+  }
+}
+
+.pagination a:hover {
+  background-color: #e5e5e5;
+}
+
+.pagination a.active {
+  background-color: #fff;
 }
 
 .playlist {
@@ -3914,47 +3966,4 @@ input, textarea {
   height: 1px;
   content: '';
   background-color: #b0b0b0;
-}
-
-.pagination {
-  margin-bottom: 30px;
-}
-
-@media screen and (max-width: 1050px) {
-  .pagination {
-    width: 50%;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .pagination {
-    width: 100%;
-  }
-}
-
-.pagination a {
-  font-size: 14px;
-  line-height: 1;
-  display: inline-block;
-  padding: 6px 9px;
-  text-decoration: none;
-  color: #000;
-  border: 1px solid #cacaca;
-  background-color: #f5f5f5;
-}
-
-@media screen and (max-width: 480px) {
-  .pagination a {
-    padding: 13px 16px;
-  }
-}
-
-.pagination a:hover {
-  background-color: #e5e5e5;
-}
-
-.pagination a.active {
-  background-color: #fff;
 }

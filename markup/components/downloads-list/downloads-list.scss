@@ -31,6 +31,10 @@
 
       @include bg-svg($check);
     }
+    .fa-down {
+      top: 0px;
+      @include bg-svg($down);
+    }
   }
 }
 .downloads-list-table {
