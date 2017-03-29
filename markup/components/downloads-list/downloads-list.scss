@@ -156,7 +156,7 @@
     @include bg-svg($download);
   }
   .fa-download,
-  .fa-timer {
+  .fa-timer, .fa-arc {
     position: relative;
     top: -15px;
 
@@ -179,6 +179,11 @@
   .fa-timer {
     &:before {
       background: url(%=static=%general/timer.gif) no-repeat;
+    }
+  }
+  .fa-arc {
+    &:before {
+      background: url(%=static=%general/arc.gif) no-repeat;
     }
   }
   .fa-error {
