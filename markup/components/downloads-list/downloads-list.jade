@@ -76,6 +76,22 @@ mixin downloads-list(search,buttons,active)
 
 			.downloads-list-table__row
 				.downloads-list-table__col
+					.downloads-list-table__name._blue
+						| VA - Русское радио. Бархатный сезон (2016)
+					.downloads-list-table__group-buttons
+						a(href="#" title="").downloads-list-table__button._green._small Скачать все файлы
+						a(href="#" title="").downloads-list-table__button._green._small._last Скачать архивом (120 мб)
+				.downloads-list-table__col
+					.downloads-list-table-status
+						.downloads-list-table-status__left
+							.fa.fa-error 
+							span Ошибка					
+						+progress
+				.downloads-list-table__col
+					.downloads-list-table__size 86 Мб из 137 Мб
+
+			.downloads-list-table__row
+				.downloads-list-table__col
 					-if(buttons == true)
 						.downloads-list-table__name._blue
 							| VA - Русское радио. Бархатный сезон (2016)

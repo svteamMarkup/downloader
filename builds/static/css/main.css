@@ -3214,7 +3214,7 @@ input, textarea {
 .downloads-list__title .fa-refresh {
   top: 3px;
   background-image: url("../images/svg-sprite/sprite.svg");
-  background-position: -4px -64px;
+  background-position: -4px -84px;
   width: 16px;
   height: 16px;
   background-repeat: no-repeat;
@@ -3223,7 +3223,7 @@ input, textarea {
 .downloads-list__title .fa-check {
   top: 5px;
   background-image: url("../images/svg-sprite/sprite.svg");
-  background-position: -4px -84px;
+  background-position: -4px -104px;
   width: 16px;
   height: 13px;
   background-repeat: no-repeat;
@@ -3381,7 +3381,7 @@ input, textarea {
 
 .downloads-list-table-status .fa-clock-o {
   background-image: url("../images/svg-sprite/sprite.svg");
-  background-position: -4px -44px;
+  background-position: -4px -64px;
   width: 16px;
   height: 16px;
   background-repeat: no-repeat;
@@ -3389,7 +3389,7 @@ input, textarea {
 
 .downloads-list-table-status .fa-check-circle {
   background-image: url("../images/svg-sprite/sprite.svg");
-  background-position: -4px -24px;
+  background-position: -4px -44px;
   width: 16px;
   height: 16px;
   background-repeat: no-repeat;
@@ -3424,6 +3424,14 @@ input, textarea {
 
 .downloads-list-table-status .fa-timer:before {
   background: url(../images/general/timer.gif) no-repeat;
+}
+
+.downloads-list-table-status .fa-error {
+  width: 16px;
+  height: 16px;
+  top: 3px;
+  position: relative;
+  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9ItCh0LvQvtC5XzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDE2IDE2OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6I0JDQkNCQzt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTQuOSw0QzE1LjcsNS4yLDE2LDYuNSwxNiw4YzAsMS40LTAuMywyLjgtMS4xLDRjLTAuNywxLjItMS43LDIuMi0yLjksMi45UzkuNSwxNiw4LDE2Yy0xLjQsMC0yLjgtMC4zLTQtMS4xUzEuOCwxMy4zLDEuMSwxMkMwLjMsMTAuOCwwLDkuNSwwLDhjMC0xLjQsMC4zLTIuOCwxLjEtNEMxLjgsMi44LDIuNywxLjgsNCwxLjFDNS4yLDAuMyw2LjUsMCw4LDBjMS40LDAsMi44LDAuMyw0LDEuMUMxMy4zLDEuOCwxNC4yLDIuOCwxNC45LDR6IE0xMi45LDEwLjhDMTMuNSwxMCwxMy43LDksMTMuNyw4YzAtMS0wLjItMi0wLjgtMi44Yy0wLjUtMC45LTEuMi0xLjUtMi4xLTIuMUMxMCwyLjYsOS4xLDIuMyw4LDIuM3MtMiwwLjItMi44LDAuOFMzLjcsNC4zLDMuMiw1LjJDMi42LDYsMi40LDcsMi40LDhjMCwxLDAuMiwyLDAuOCwyLjhjMC41LDAuOSwxLjIsMS41LDIuMSwyLjFDNi4xLDEzLjQsNywxMy43LDgsMTMuN3MyLTAuMiwyLjgtMC44QzExLjcsMTIuNCwxMi41LDExLjcsMTIuOSwxMC44eiBNMTEuNCw5LjlsLTEuNSwxLjVjMCwwLTAuMSwwLjEtMC4yLDAuMWMtMC4xLDAtMC4yLDAtMC4yLTAuMUw4LDEwbC0xLjQsMS40YzAsMC0wLjEsMC4xLTAuMiwwLjFzLTAuMiwwLTAuMi0wLjFMNC42LDkuOWMwLDAtMC4xLTAuMS0wLjEtMC4yczAtMC4yLDAuMS0wLjJMNiw4TDQuNiw2LjVjMCwwLTAuMS0wLjEtMC4xLTAuMmMwLTAuMSwwLTAuMiwwLjEtMC4ybDEuNS0xLjVjMCwwLDAuMS0wLjEsMC4yLTAuMXMwLjIsMCwwLjIsMC4xTDgsNS45bDEuNC0xLjRjMCwwLDAuMS0wLjEsMC4yLTAuMWMwLjEsMCwwLjIsMCwwLjIsMC4xTDExLjQsNmMwLDAsMC4xLDAuMSwwLjEsMC4yYzAsMC4xLDAsMC4yLTAuMSwwLjJMMTAsOGwxLjQsMS40YzAsMCwwLjEsMC4xLDAuMSwwLjJTMTEuNSw5LjgsMTEuNCw5Ljl6Ii8+PC9zdmc+);
 }
 
 .downloads-list-table-status__left {
